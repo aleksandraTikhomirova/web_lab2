@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ВЕБ Лабораторная работа №2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-content">
+            <h1>Лабораторная работа №2 по веб-программированию</h1>
+            <p><span class="label">Тихомирова Александра Евгеньевна</span></p>
+            <p><span class="label">группа P3207</span></p>
+            <p><span class="label">вариант 65986</span></p>
+        </div>
+    </header> 
+    <main>
+        <section id="form-section">
+            <h2>Введите координаты точки</h2>
+            <form id="point-form" action="#" method="get">
+                <div class="form-group">
+                    <label class="field-label">Выберите X</label>
+                    <div class="button-group" id="x-group">
+                        <button type="button" class="x-button" value="-5">-5</button>
+                        <button type="button" class="x-button" value="-4">-4</button>
+                        <button type="button" class="x-button" value="-3">-3</button>
+                        <button type="button" class="x-button" value="-2">-2</button>
+                        <button type="button" class="x-button" value="-1">-1</button>
+                        <button type="button" class="x-button" value="0">0</button>
+                        <button type="button" class="x-button" value="1">1</button>
+                        <button type="button" class="x-button" value="2">2</button>
+                        <button type="button" class="x-button" value="3">3</button>
+                    </div>
+                    <span class="validation-error" id="x-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label class="field-label" for="y-input">Введите Y (-3 до 5)</label>
+                    <input type="text" id="y-input" name="y">
+                    <span class="validation-error" id="y-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="field-label">Выберите R</label>
+                    <div class="button-group" id="r-group">
+                        <button type="button" class="r-button" value="1">1</button>
+                        <button type="button" class="r-button" value="1.5">1.5</button>
+                        <button type="button" class="r-button" value="2">2</button>
+                        <button type="button" class="r-button" value="2.5">2.5</button>
+                        <button type="button" class="r-button" value="3">3</button>
+                    </div>
+                    <span class="validation-error" id="r-error"></span>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" id="submit-btn">Проверить попадание</button>
+                    <button type="button" id="clear-btn">Очистить историю</button>
+                </div>
+                <p id="request-error" class="validation-error" role="alert"></p>
+            </form>
+        </section>
+        
+        <section id="canvas-section">
+            <h2>Координатная плоскость</h2>
+            <div class="canvas-wrapper">
+                <canvas id="graph-canvas" width="500" height="500"></canvas>
+            </div>
+        </section>
+        
+        <section id="results-section">
+            <h2>История проверок</h2>
+            <div class="table-wrapper">
+                <table id="results-table">
+                    <thead>
+                        <tr>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>R</th>
+                            <th>результат</th>
+                            <th>дата и время</th> 
+                            <th>время скрипта</th>     
+                        </tr>
+                    </thead>
+                    <tbody id="results-body">
+                    </tbody>
+                </table>
+            </div>
+            <p id="empty-message" class="info-message">Нет сохраненных результатов</p>                           
+        </section>    
+    </main>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>    

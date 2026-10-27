@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: serif;
+    background-color: #b3b3b3;
+    color: #1f1f1f;
+    line-height: 1.6;
+    padding: 20px;
+}
+#main-header{
+    background-color: #4a4c4e;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+#main-header h1{
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+#main-header p{
+    font-size: 18px;
+    margin: 5px 0;
+}
+#main-header > div{
+    max-width: 800px;
+    margin: 0 auto;
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+main section{
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+main section h2{
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+#point-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-group{
+    padding: 10px;
+    border-radius: 5px;
+}
+.form-group > label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.radio-group label,
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1% 2%;
+    margin: 0.5%;
+    background-color: #ecf0f1;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.radio-group label:hover,
+.checkbox-group label:hover {
+    background-color: #d5dbdb;
+}
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"]{
+    margin: 0;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+#y-input{
+    width: 30%;
+    padding: 1.5%;
+    margin: 1%;
+    font-size: 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 4px;
+}
+#y-input:focus{
+    border-color: #3498db;
+    outline: none;
+}
+.form-group input[type="text"]{
+    width: 40%;
+    padding: 1.5%;
+    margin: 1%;
+    min-width: 150px;
+}
+.validation-error{
+    color: #e74c3c;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    min-height: 20px;
+}
+.form-actions{
+    display: flex;
+    gap: 2%;
+    margin-top: 2%;
+}
+#submit-btn{
+    background-color: #9a9a9a;
+    color: white;
+    border: none;
+    padding: 1.5% 3%;
+    margin: 1%;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#submit-btn:hover{
+    background-color: #5c5c5c;
+}
+#clear-btn{
+    background-color: #e48f85;
+    color: white;
+    border: none;
+    padding: 1.5% 3%;
+    margin: 1%;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#clear-btn:hover{
+    background-color: #c0392b;
+}
+.canvas-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#graph-canvas{
+    border: 2px solid #2c3e50;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.table-wrapper{
+    overflow-x: auto ;
+}
+#results-table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+#results-table thead{
+    background-color: #4a4c4e;
+    color: white;
+}
+#results-table th{
+    padding: 12px 15px;
+    text-align: left;
+}
+#results-table td{
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+#results-table tbody tr:hover{
+    background-color: #f0f0f0;
+}
+.result-hit{
+    color: #43a26b;
+    font-weight: bold;
+}
+.result-miss{
+    color: #cd5f53;
+    font-weight: bold;
+}
+.info-message{
+    color: #7f8c8d;
+    text-align: center;
+    padding: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.button-group > button {
+    padding: 1% 2%;
+    margin: 0.5%;
+    border: 2px solid #bdc3c7;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+    color: #1f1f1f;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-group > button:hover {
+    border-color: #56b3f0;
+}
+
+.button-group > button.selected {
+    background-color: #56b3f0;
+    border-color: #56b3f0;
+    color: white;
+}
